@@ -1,0 +1,13 @@
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: rss-site
+  labels:
+    app: web
+spec:
+  containers:
+    - name: location-summary
+      image: ubuntu
+      ports:
+        - containerPort: 3000
